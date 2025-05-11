@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Quiz App</h1>
+            <div class="quiz-set">
+                <label for="quizSet">Select Quiz Set:</label>
+                <select id="quizSet" onchange="loadQuestions()">
+                    <option value="set1">Set 1</option>
+                    <option value="set2">Set 2</option>
+                    <option value="set3">Set 3</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="box" id="question-container">
+            <p id="question" class="question-box"></p>
+            <ul id="answers" class="answers-list">
+                
+            </ul>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <p id="score"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
